@@ -50,8 +50,18 @@
 \newcommand{\SP}{\mathbb{P}} % Signal processors
 \newcommand{\DS}{\mathbb{D}} % Memory destination
 
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+
+
+
 % Ligatures
 \mathlig{<*}{\!\downarrow\!}
 \mathlig{*>}{\!\uparrow\!}
 \mathlig{<>}{\mid}
 \mathlig{||}{\mid}
+
+% Math color
+\everymath{\color{Blue}}
+\everydisplay{\color{Blue}}
+\def\m@th{\normalcolor\mathsurround\z@}
