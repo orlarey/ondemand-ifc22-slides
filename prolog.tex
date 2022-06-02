@@ -1,0 +1,57 @@
+\usepackage{hyperref}
+\usepackage{semantic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+
+% semantic functions
+\newcommand{\semc}[1]{|[#1|]}
+\newcommand{\sems}[1]{|[#1|]}
+\newcommand{\rdef}[1]{\mathsf{def}|[#1|]}
+\newcommand{\down}[1]{\mathsf{down}|[#1|]}
+\newcommand{\up}[1]{\mathsf{up}|[#1|]}
+\newcommand{\io}[1]{\mathsf{io}|[#1|]}
+\newcommand{\cc}[1]{\mathsf{comp}|[#1|]}
+\newcommand{\cs}[1]{\mathsf{cs}|[#1|]}
+\newcommand{\prop}[1]{\mathsf{prop}|[#1|]}
+
+% ID functions
+\newcommand{\SID}[1]{\mathsf{id_s}|[#1|]}
+\newcommand{\VID}[1]{\mathsf{id_v}|[#1|]}
+\newcommand{\TID}[1]{\mathsf{id_t}|[#1|]}
+
+% Mark function
+\newcommand{\vmark}[1]{\mathsf{mark}|[#1|]}
+
+% Faustaudio in and out and ondemand
+\newcommand{\ain}[1]{\mathtt{I}_{#1}}
+\newcommand{\aout}[1]{\mathtt{O}_{#1}}
+\newcommand{\od}[1]{\mathtt{od} (#1)}
+\newcommand{\instr}[3]{#1|-#2\mathtt{:=}#3}
+
+% Power set
+\newcommand{\pset}[1]{\mathcal{P} (#1)}
+
+% Numerical sets 
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+% Faust related sets
+\newcommand{\FS}{\mathbb{S}} % Signals
+\newcommand{\MS}{\mathbb{M}} % Memory Signals
+\newcommand{\FP}{\mathbb{F}} % Programs
+\newcommand{\FC}{\mathbb{C}} % Circuits
+\newcommand{\FI}{\mathbb{I}} % Instructions
+\newcommand{\FT}{\mathbb{T}} % Time reference
+\newcommand{\IS}{\pset{\FI}} % set of Instructions
+\newcommand{\SP}{\mathbb{P}} % Signal processors
+\newcommand{\DS}{\mathbb{D}} % Memory destination
+
+% Ligatures
+\mathlig{<*}{\!\downarrow\!}
+\mathlig{*>}{\!\uparrow\!}
+\mathlig{<>}{\mid}
+\mathlig{||}{\mid}
