@@ -1,6 +1,6 @@
 ---
-author: Yann Orlarey
-title: Compiling Faust with Ondemand
+author: Yann Orlarey -- Emeraude Team (INRIA-INSA-GRAME)
+title: Compiling Faust with Ondemand (https://github.com/orlarey/ondemand-ifc22-slides/blob/master/slides.pdf)
 institute: "![](images/logo-grame-large.png)"
 topic: "Faust"
 theme: "Frankfurt"
