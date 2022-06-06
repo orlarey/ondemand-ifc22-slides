@@ -1,4 +1,5 @@
-SRC = intro.md circuits.md signals.md memsignals.md instructions.md compilation.md
+SRC = intro.md circuits.md signals.md memsignals.md instructions.md compilation.md examples.md conclusion.md
+
 PDF = $(SRC:.md=.pdf)
 
 slides.pdf : $(SRC) examples/*.dsp prolog.tex title.yaml

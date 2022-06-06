@@ -72,15 +72,15 @@ $S_1*>S_2$ is the upsampling of $S_1$ according to clock signal $S_2$.
 
 \begin{table}[!ht]
 \centering 
-\begin{tabular}{ccc}
+\begin{tabular}{cccc}
 \hline
-$S_1$ & $S_2$ & $S_1*>S_2$ \\ \hline
-a     & 1     & a          \\
-d     & 0     & a          \\
-f     & 0     & a          \\
-      & 1     & d          \\
-      & 1     & f          \\
-      & 0     & f          \\ \hline
+$S_1$ & $S_2$ & $S_1*>S_2$  & $\up{S_2}$ \\ \hline
+a     & 1     & a         &0 \\
+d     & 0     & a         &0 \\
+f     & 0     & a         &0 \\
+      & 1     & d         &1 \\
+      & 1     & f         &2 \\
+      & 0     & f         &2 \\ \hline
 \end{tabular}
 \caption{Example of upsampling}
 \label{tab:upsampling}

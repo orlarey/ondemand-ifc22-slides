@@ -1,10 +1,13 @@
 
 
-# Ondemand Motivations
+# Ondemand : Traditional Approach
 
-![](images/ondemand0.png)
+![](images/ondemand-back-prop.png)
 
-# Ondemand Principle
+# Ondemand : Faust Approach
 
 ![](images/ondemand1.png)
 
+# The Faust Compiler
+
+![](images/faust-compilation-flow.pdf)
