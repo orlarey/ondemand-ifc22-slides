@@ -2,10 +2,14 @@
 
 What's missing ?
 
-- Several primitives like tables, waveforms, soundfiles, etc. are not compiled yet
+- Several primitives like tables, waveforms, etc. are missing
 - Replace current interval computation
 - Proper C++ code generation
 - Merge with dev branch
-- Future extensions :
-  - Data Parallelism
+- Future extensions:
   - interleave(P)
+  - upsample(N,P)
+  - downsample(N,P)
+  - modulation
+- Code génération improvements:
+  - Data Parallelism
