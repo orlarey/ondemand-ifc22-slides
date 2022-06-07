@@ -61,7 +61,7 @@ $$
 \inference[(down)]{
 \down{S_2} = \{n\in\N <> \sems{S_2}(n)=1\}
 }{
-\sems{S_1<*S_2}(t) = \sems{S_1}(\down{S_2}(t)
+\sems{S_1<*S_2}(t) = \sems{S_1}(\down{S_2}(t))
 }
 $$
 

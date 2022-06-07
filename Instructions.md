@@ -4,15 +4,19 @@ An *instruction* is an intermediate representation, of type SSA, for signals.
 
 ## Definition
 $$
-	I\in\FI ::= \instr{T}{t}{t+1} || \instr{T}{d}{M} || \instr{T}{v[M_1,M_2]}{M_3}
+\begin{aligned}
+	I\in\FI ::=&  \hspace{0.25cm}\instr{T}{d}{M}\\ 
+	||& \hspace{0.25cm}\instr{T}{v[M_1,M_2]}{M_3}\\ 
+	||& \hspace{0.25cm}\instr{T}{t}{t+1} 
+	\end{aligned}
 $$
 
 ## Where
 
-- $T$ is a time reference indicates when this instruction must be executed  ; 
-- $t$ is a memory reference used for the current value of the time reference ;
+- $T$ is a time reference indicates when this instruction must be executed  ;
 - $d$ and $v$ are memory references ;
-- $M$ is a signal in memory that is computed.
+- $M$ is a signal in memory that is computed ; 
+- $t$ is a memory reference for the current value of the time reference.
 
 # Time reference
 
