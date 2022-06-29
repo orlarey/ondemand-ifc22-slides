@@ -1,4 +1,4 @@
-SRC = intro.md circuits.md signals.md memsignals.md instructions.md compilation.md examples.md conclusion.md
+SRC = intro.md circuits.md signals.md instructions.md memsignals.md compilation.md examples.md conclusion.md
 
 PDF = $(SRC:.md=.pdf)
 

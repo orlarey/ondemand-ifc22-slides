@@ -20,7 +20,7 @@ $$
 
 # Time reference
 
-A _time reference_ is a non empty list of clock signals that indicates when an instruction should be executed.
+A _time reference_ is a non-empty list of clock signals that indicates when an instruction should be executed.
 
 ## Definition
 $$ 

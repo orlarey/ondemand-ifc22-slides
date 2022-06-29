@@ -60,6 +60,22 @@ $$
 }
 $$ 
 
+# Signal Compilation
+### Upsampling
+
+The $S_1*>S_2$ upsampling appears at the output of an ondemand. It is necessary to compile $S_1$ into the clock time reference $S_2$ (which is added to the current time reference). The signal $S_1$ must also be stored in a variable to do the upsampling.
+
+$$
+\inference[(up)]{
+    \cs{S_2.T}=M_2\times J_2 \\
+    \cs{S_1.M_2.T}=M_1\times J_1 \\
+    \SID{M_1.M_2.T} = m\\
+    J_3 = \{\instr{M_2.T}{m}{M_1}\}
+}{
+    \cs{(S_1*>S_2).T}= m \times J_1 \cup J_1 \cup J_2
+}
+$$ 
+
 <!------------------------------------------------------------------------------------------------------------>
 # Signal Compilation
 ### Downsampling
@@ -74,22 +90,6 @@ $$
     J_3 = \{\instr{T}{m}{M_1}\}
 }{
     \cs{(S_1<*S_2).M_2.T}= m\times J_3\cup J_1\cup J_2
-}
-$$ 
-
-# Signal Compilation
-### Upsampling
-
-The $S_1*>S_2$ upsampling appears at the output of an ondemand. It is necessary to compile $S_1$ into the clock time reference $S_2$ (which is added to the current time reference). The signal $S_1$ must also be stored in a variable to do the upsampling.
-
-$$
-\inference[(up)]{
-    \cs{S_2.T}=M_2\times J_2 \\
-    \cs{S_1.M_2.T}=M_1\times J_1 \\
-    \SID{M_1.M_2.T} = m\\
-    J_3 = \{\instr{M_2.T}{m}{M_1}\}
-}{
-    \cs{(S_1*>S_2).T}= m \times J_1 \cup J_1 \cup J_2
 }
 $$ 
 
